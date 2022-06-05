@@ -7,6 +7,7 @@ It is a script to set up a Cloud Storage with download manager. Oneindex, aria2,
 ````
 wget --no-check-certificate -O Aria2Drive.sh https://raw.githubusercontent.com/l1ngth6/Aria2Drive/master/Aria2Drive.sh && chmod +x Aria2Drive.sh && bash Aria2Drive.sh
 ````
+删除了系统和nginx验证
 
 To use this script, you need OneDrive account and a server/VPS which runs Debian.
 
