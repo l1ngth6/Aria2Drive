@@ -9,22 +9,22 @@ echo "    #                  Version 0.1.2               #"
 echo "    ################################################"
 
 #check system pure debian
-echo -e ""
-if cat /etc/*-release | grep -Eqi "debian|ubuntu"; then
-  echo "Debian/ubuntu"
-else
-  echo "Only Debain and ubuntu are supported"
-  echo "***EXIT***"
-  sleep 1
-  exit
-fi
-if dpkg -l | grep -Eqi "nginx|apache|caddy"; then
-  echo "System has been modified"
-  echo "Pure Debain or ubuntu is needed!"
-  echo "***EXIT***"
-  sleep 1
-  exit
-fi
+#echo -e ""
+#if cat /etc/*-release | grep -Eqi "debian|ubuntu"; then
+#  echo "Debian/ubuntu"
+#else
+#  echo "Only Debain and ubuntu are supported"
+#  echo "***EXIT***"
+#  sleep 1
+#  exit
+#fi
+#if dpkg -l | grep -Eqi "nginx|apache|caddy"; then
+#  echo "System has been modified"
+#  echo "Pure Debain or ubuntu is needed!"
+#  echo "***EXIT***"
+#  sleep 1
+#  exit
+#fi
 
 #set up bbr
 if lsmod | grep -Eqi bbr; then
